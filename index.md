@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+## Welcome to my Pages
 
-You can use the [editor on GitHub](https://github.com/songwxs/songwxs.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Java知识点
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### 1 数据类型知识点
 
-### Markdown
+- 数据类型：分为*基本数据类型，引用数据类型*。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**基本数据类型**有8种：四种数字类型（byte，short，int ，long），两种浮点类型（float，double），一种字符类型（char），一种布尔类型（boolean）
 
-```markdown
-Syntax highlighted code block
+**引用数据类型**：数组，类，接口。
 
-# Header 1
-## Header 2
-### Header 3
+*注意long型的默认值为 `0L`，float类型的默认值为 `0.0f`，double类型的默认值为 `0.0d`，boolean默认类型为false。*
 
-- Bulleted
-- List
+- 数据类型的转换：自动类型转换，强制类型转换。
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```java
+       低  ------------------------------------>  高
+     byte,short,char—> int —> long—> float —> double
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**自动类型转换**(由低转高)直接转换即可。
 
-### Jekyll Themes
+**强制类型转换**(由高转低，精度损失需要强制转换)，
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/songwxs/songwxs.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+`eg`：
 
-### Support or Contact
+```java
+int i1 = 123;
+byte b = (byte)i1;//强制类型转换为byte
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
