@@ -1,3 +1,18 @@
+# Maven #
+target/
 
-index.md
-_config.yml
+# IDEA #
+.idea/
+*.iml
+
+# Eclipse #
+.settings/
+.classpath
+.project
+
+# logs file #
+logs/
+
+# database file #
+tale.db
+pack.sh
